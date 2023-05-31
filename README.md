@@ -1,2 +1,2 @@
-# guidedresearchproject-sokrat00
-guidedresearchproject-sokrat00 created by GitHub Classroom
+# Research project by Sokrat Bashirov
+Topic proposal is ready in rport folder
