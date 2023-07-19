@@ -15,6 +15,16 @@ The main features of the application include:
  - Alerting Mechanism: When an issue is detected in the data, the application triggers alerts to notify users in real-time. Alerts can be sent through various channels such as     email, SMS, or in-app notifications, allowing users to take immediate action.
  - Data Visualization and Analysis: The application provides visualizations and insights into the monitored data. Users can view trends, patterns, and statistics to gain a        deeper understanding of the data and identify potential issues.
 
+**Project Structure**
+
+The project follows a specific folder structure to organize different components. Here is an overview of the project structure
+
+- reviews
+- data
+- papers
+- presentations
+- reports
+
 **Researcher**
 
 This research project is conducted by Sokrat Bashirov
