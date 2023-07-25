@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualization Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Visualization Dashboard</h1>
+    
+    <form method="POST">
+        <label for="column">Select a column:</label>
+        <select id="column" name="column">
+            <option value="Customer_Age">Customer Age</option>
+            <option value="Gender">Gender</option>
+            <option value="Education_Level">Education Level</option>
+            <option value="Marital_Status">Marital Status</option>
+            <option value="Income_Category">Income Category</option>
+            <option value="Card_Category">Card Category</option>
+            <option value="Months_on_book">Months on Book</option>
+            <option value="Months_Inactive_12_mon">Months Inactive (12 months)</option>
+            <option value="Contacts_Count_12_mon">Contacts Count (12 months)</option>
+            <option value="Credit_Limit">Credit Limit</option>
+            <option value="Total_Revolving_Bal">Total Revolving Balance</option>
+            <option value="Avg_Open_To_Buy">Avg Open To Buy</option>
+            <option value="Total_Amt_Chng_Q4_Q1">Total Amount Change (Q4 to Q1)</option>
+            <option value="Total_Trans_Amt">Total Transaction Amount</option>
+            <option value="Total_Trans_Ct">Total Transaction Count</option>
+            <option value="Total_Ct_Chng_Q4_Q1">Total Count Change (Q4 to Q1)</option>
+            <option value="Avg_Utilization_Ratio">Average Utilization Ratio</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if plot_json %}
+        <div id="plot-container"></div>
+        <script>
+            const plotJson = {{ plot_json|safe }};
+            Plotly.newPlot('plot-container', plotJson.data, plotJson.layout);
+        </script>
+    {% endif %}
+</body>
+</html>
