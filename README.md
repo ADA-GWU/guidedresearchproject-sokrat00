@@ -20,6 +20,7 @@ The main features of the application include:
 The project follows a specific folder structure to organize different components. Here is an overview of the project structure
 
 - Reviews: This folder stores feedback and reviews of the reports of the project progress
+- Codes: This folder contains any source code regarding the application built
 - Data: This folder contains datasets that is used in this research project
 - Papers:  This folder contains academic papers, research articles, and references related to data monitoring, alerting, and related topics. It can serve as a repository of resources for further reading and citation.
 - Presentations: This folder includes presentation slides and materials used for showcasing the project progress, milestones, and results. 
