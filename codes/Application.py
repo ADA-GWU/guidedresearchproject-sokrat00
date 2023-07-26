@@ -59,9 +59,9 @@ def index():
         scatter_json = scatter_fig.to_json()
 
          
-        return render_template('index.html', hist_json=hist_json, box_json=box_json, density_json=density_json, scatter_json=scatter_json)
+        return render_template('distribution.html', hist_json=hist_json, box_json=box_json, density_json=density_json, scatter_json=scatter_json)
 
-    return render_template('index.html', hist_json=None, box_json=None, density_json=None, scatter_json=None)
+    return render_template('distribution.html', hist_json=None, box_json=None, density_json=None, scatter_json=None)
 
 @app.route('/alerting')
 def alerting_page():
