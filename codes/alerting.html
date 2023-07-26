@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alerting Page</title>
+</head>
+<body>
+    <h1>Alerting Page</h1>
+
+    {% if columns_with_null %}
+        <p>The following columns have null values:</p>
+        <ul>
+            {% for column in columns_with_null %}
+            <li>{{ column }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No null values found.</p>
+    {% endif %}
+    <form action="/">
+        <button type = "submit" href = "/">Go to Main Page</button>
+    </form>
+</body>
+</html>
