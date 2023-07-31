@@ -1,4 +1,4 @@
-# Guided Research Project: Data Pipeline Monitoring and Alerting
+# Guided Research Project: The Comparative Study of Indexing Techniques in Different Database Systems
 
 **Introduction**
 
