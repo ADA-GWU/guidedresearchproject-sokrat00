@@ -16,10 +16,6 @@
 -- Creative Commons, 171 Second Street, Suite 300, San Francisco, 
 -- California, 94105, USA.
 -- 
---  DISCLAIMER
---  To the best of our knowledge, this data is fabricated, and
---  it does not correspond to real people. 
---  Any similarity to existing people is purely coincidental.
 -- 
 
 DROP DATABASE IF EXISTS employees;
