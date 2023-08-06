@@ -2,7 +2,7 @@
 
 **Introduction**
 
-This project aims to conduct a comparative study of indexing techniques in two widely used relational database management systems, MySQL and PostgreSQL. The study focuses on evaluating and comparing the performance of these databases under various indexing scenarios using a real-world dataset.
+This project aims to conduct a comparative study of indexing techniques in two widely used relational database management systems, MySQL and PostgreSQL. The study focuses on evaluating and comparing the performance of these databases under various indexing scenarios using test database.
 
 **Project Description**
 
