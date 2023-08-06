@@ -74,10 +74,24 @@ def main():
             plt.legend(loc='upper right')
             plt.xlabel('Execution Time (seconds)')
             plt.ylabel('Frequency')
-            plt.title(f'Histogram for Query {i+1}')
+            
+            # Calculate mean and variance
+            mysql_mean = np.mean(mysql_query_results[i])
+            postgres_mean = np.mean(postgres_query_results[i])
+            mysql_variance = np.var(mysql_query_results[i])
+            postgres_variance = np.var(postgres_query_results[i])
+            
+            # Display mean and variance in the histogram title
+            plt.title(f'Histogram for Query {i+1}\n'
+                      f'MySQL: Mean={mysql_mean:.6f}, Variance={mysql_variance:.6f}\n'
+                      f'PostgreSQL: Mean={postgres_mean:.6f}, Variance={postgres_variance:.6f}')
             plt.savefig(f'histogram_query_{i+1}.png')
             plt.close()
 
+            # Print mean and variance to the console
+            print(f'Query {i+1} - MySQL: Mean={mysql_mean:.6f}, Variance={mysql_variance:.6f}')
+            print(f'Query {i+1} - PostgreSQL: Mean={postgres_mean:.6f}, Variance={postgres_variance:.6f}')
+        
     except Exception as e:
         print(f"Error: {e}")
 
